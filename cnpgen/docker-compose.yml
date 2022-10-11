@@ -1,0 +1,16 @@
+version: "3.8"
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    environment:      
+      HTTP_PROXY: 'http://localhost:8080'
+      HTTPS_PROXY: 'http://localhost:8080'
+      NO_PROXY: 'localhost, *.test.lan'
+    image: app:react-docker
+    container_name: react_container
+    command: npm start

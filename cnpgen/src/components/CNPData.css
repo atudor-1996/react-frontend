@@ -1,0 +1,31 @@
+.li-cnp
+{
+    list-style: none;
+}
+
+.cnpgen
+{
+    align-items: right;
+    justify-content: center;
+    display: inline-block;
+    position: absolute;
+    top: 150px;
+    left: min(75vw, 300px);
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 200px;
+    height: 100px;
+    list-style: none;
+}
+
+.nav-menu-items {
+    padding-left: 0;
+}
+
+.inputNumber{
+    width: 200px;
+}
+.btn-fetch
+{
+    width: 200px;
+}
